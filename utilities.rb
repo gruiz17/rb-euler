@@ -13,3 +13,11 @@ end
 def triangle n
   return ((0.5)*n*(n+1)).to_i
 end
+
+def letter_map
+  char_map = {}
+  ("A".."Z").to_a.each do |char|
+    char_map[char] = ("A".."Z").to_a.index(char) + 1
+  end
+  return char_map
+end
