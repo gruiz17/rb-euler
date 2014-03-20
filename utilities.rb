@@ -1,3 +1,16 @@
+def fib_sequence(n)
+  prev = 1
+  curr = 2
+  fibArr = [1]
+  while curr < n
+    tmp = curr
+    fibArr << curr
+    curr = prev + curr
+    prev = tmp
+  end
+  return fibArr
+end
+
 def is_prime n
   if (n == 2)
     return true
