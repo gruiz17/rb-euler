@@ -12,6 +12,9 @@ def fib_sequence(n)
 end
 
 def is_prime n
+  if (n == 0 || n == 1)
+    return false
+  end
   if (n == 2)
     return true
   end
